@@ -36,8 +36,8 @@ class FirstFragment : Fragment() {
 
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            binding.buttonFirst.text = "UPDATE"
         }
-        binding.buttonFirst.text = "SAVE";
     }
 
     override fun onDestroyView() {
